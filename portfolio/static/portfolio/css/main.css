@@ -1,0 +1,65 @@
+.navbar {
+    position: sticky;
+}
+
+ul {
+  background-color: pink;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: block;
+}
+
+ul li a:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+.img-home {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background-color: #f1f1f1;
+    width: 25%;
+    margin: 10px 25px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.service:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25)
+}
+
+.service p {
+    margin: 10px;
+}
+
+.service-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-img img {
+    width: 75px;
+}

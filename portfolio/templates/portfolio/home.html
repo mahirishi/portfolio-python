@@ -1,0 +1,33 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+    <h1 class="center">Home Page</h1>
+
+    <div class="img-home">
+        <img  width="120px" src="{% static 'portfolio/coding.png' %}" />
+    </div>
+
+    <h2>Name:</h2>
+    <p>Hafiz Furqan</p>
+
+    <h2>About Me:</h2>
+    <p>
+    I am a full stack developer having 6+ years of experience. My area of
+    expertise are HTML, CSS, JS, PHP, Laravel, MySQL, MongoDB, React, Node,
+    Express, Android, Java, Kotlin, Python, Django
+    </p>
+
+    <h2 class="center">Services</h2>
+
+    <div class="services">
+        {% for service in services %}
+            <div class="service">
+                <div class="service-img">
+                    <img src="{% static 'portfolio/' %}{{service.icon}}">
+                </div>
+                <h3 class="center">{{ service.title }}</h3>
+                <p class="center">{{ service.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
