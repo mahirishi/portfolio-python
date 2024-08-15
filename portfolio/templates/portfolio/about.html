@@ -8,4 +8,18 @@
   expertise are HTML, CSS, JS, PHP, Laravel, MySQL, MongoDB, React, Node,
   Express, Android, Java, Kotlin, Python, Django
 </p>
+
+<h2 class="center">Services</h2>
+
+    <div class="services">
+        {% for service in services %}
+            <div class="service">
+                <div class="service-img">
+                    <img src="{% static 'portfolio/' %}{{service.icon}}">
+                </div>
+                <h3 class="center">{{ service.title }}</h3>
+                <p class="center">{{ service.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock content %}
