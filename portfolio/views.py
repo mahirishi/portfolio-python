@@ -43,7 +43,10 @@ def home(request):
     return render(request, 'portfolio/home.html', context)
 
 def about(request):
-    return render(request, 'portfolio/about.html')
+    context = {
+        'services': services
+    }
+    return render(request, 'portfolio/about.html', context)
 
 def contact(request):
     return HttpResponse('<h1>My Contact Page</h1>')
