@@ -1,24 +1,24 @@
-.navbar {
-    position: sticky;
+body {
+  margin: 0;
 }
 
-ul {
+.navbar ul {
   background-color: pink;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 20px 0px;
   display: flex;
   justify-content: center;
 }
 
-ul li a {
+.navbar ul li a {
   text-decoration: none;
   color: black;
   padding: 10px 20px;
   display: block;
 }
 
-ul li a:hover {
+.navbar ul li a:hover {
   background-color: hotpink;
   color: white;
 }
@@ -62,4 +62,30 @@ ul li a:hover {
 
 .service-img img {
     width: 75px;
+}
+
+footer {
+  background-color: pink;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer ul {
+  background-color: pink;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: block;
+}
+
+footer ul li a:hover {
+  color: hotpink;
 }
