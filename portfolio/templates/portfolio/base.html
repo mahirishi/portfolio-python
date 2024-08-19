@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home Page | Hafiz Furqan</title>
+    <title>
+      {% if title %}
+        {{ title }}
+      {% else %}
+        My Portfolio | Hafiz Furqan
+      {% endif %}
+    </title>
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'portfolio/css/main.css' %}" />
@@ -15,9 +21,9 @@
   <body>
     <nav class="navbar">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
+          <li><a href="{% url 'portfolio-home' %}">Home</a></li>
+          <li><a href="{% url 'portfolio-about' %}">About</a></li>
+          <li><a href="{% url 'portfolio-services' %}">Services</a></li>
           <li><a href="{% url 'portfolio-contact' %}">Contact</a></li>
         </ul>
     </nav>

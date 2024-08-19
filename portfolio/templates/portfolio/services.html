@@ -1,0 +1,17 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+    <h1 class="center">Service Page</h1>
+
+    <div class="services">
+        {% for service in services %}
+            <div class="service">
+                <div class="service-img">
+                    <img src="{% static 'portfolio/' %}{{service.icon}}">
+                </div>
+                <h3 class="center">{{ service.title }}</h3>
+                <p class="center">{{ service.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
